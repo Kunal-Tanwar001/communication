@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
 ProgressBar progressBar;
 Handler handler;
 Intent intent;
+    public static String EncodeString(String string) {
+        return string.replace(".", ",");  /// because firebase is not accepting special characters eg .,[] type bt accpets coma.
+    }
 
 
     @Override
@@ -31,7 +34,7 @@ Intent intent;
              startActivity(intent);
              finish();
             }
-        },2100);
+        },2900);
 
 
 
